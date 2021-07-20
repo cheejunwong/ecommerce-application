@@ -57,7 +57,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="value in values" :key="value.id">
+                        <tr v-for="(value, index) in values" :key="index">
                             <td style="width: 25%" class="text-center">{{ value.id}}</td>
                             <td style="width: 25%" class="text-center">{{ value.value}}</td>
                             <td style="width: 25%" class="text-center">{{ value.price}}</td>

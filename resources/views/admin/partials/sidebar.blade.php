@@ -8,14 +8,19 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
-                <i class="app-menu__icon fa fa-cogs"></i>
-                <span class="app-menu__label">Settings</span>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.products.index' ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
+                <i class="app-menu__icon fa fa-shopping-bag"></i>
+                <span class="app-menu__label">Products</span>
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.categories.index' ? 'active' : '' }}"
-                href="{{ route('admin.categories.index') }}">
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.brands.index' ? 'active' : '' }}" href="{{ route('admin.brands.index') }}">
+                <i class="app-menu__icon fa fa-briefcase"></i>
+                <span class="app-menu__label">Brands</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.categories.index' ? 'active' : '' }}" href="{{ route('admin.categories.index') }}">
                 <i class="app-menu__icon fa fa-tags"></i>
                 <span class="app-menu__label">Categories</span>
             </a>
@@ -27,9 +32,9 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.brands.index' ? 'active' : '' }}" href="{{ route('admin.brands.index') }}">
-                <i class="app-menu__icon fa fa-briefcase"></i>
-                <span class="app-menu__label">Brands</span>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
+                <i class="app-menu__icon fa fa-cogs"></i>
+                <span class="app-menu__label">Settings</span>
             </a>
         </li>
     </ul>
