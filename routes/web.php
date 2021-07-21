@@ -18,6 +18,4 @@ require 'admin.php';
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'site.pages.homepage');
