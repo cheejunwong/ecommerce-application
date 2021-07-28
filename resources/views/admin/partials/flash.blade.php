@@ -3,6 +3,11 @@
     $messages = Session::get('success');
     $info = Session::get('info');
     $warnings = Session::get('warning');
+
+    if (is_string($errors)) {
+        $errors = array('error' => $errors);
+    }
+
 @endphp
 @if ($errors) @foreach($errors as $key => $value)
     <div class="alert alert-danger alert-dismissible" role="alert">
